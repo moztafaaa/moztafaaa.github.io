@@ -18,10 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-				'mono': ['JetBrains Mono', 'monospace'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -56,29 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Portfolio-specific colors
-				portfolio: {
-					dark: 'hsl(var(--portfolio-dark))',
-					darker: 'hsl(var(--portfolio-darker))',
-					surface: 'hsl(var(--portfolio-surface))',
-					'surface-elevated': 'hsl(var(--portfolio-surface-elevated))',
-					accent: 'hsl(var(--portfolio-accent))',
-					'accent-glow': 'hsl(var(--portfolio-accent-glow))',
-					secondary: 'hsl(var(--portfolio-secondary))',
-					'text-primary': 'hsl(var(--portfolio-text-primary))',
-					'text-secondary': 'hsl(var(--portfolio-text-secondary))',
-					'text-muted': 'hsl(var(--portfolio-text-muted))',
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
 				}
-			},
-			backgroundImage: {
-				'gradient-primary': 'var(--portfolio-gradient-primary)',
-				'gradient-dark': 'var(--portfolio-gradient-dark)',
-				'gradient-glow': 'var(--portfolio-gradient-glow)',
-			},
-			boxShadow: {
-				'glass': 'var(--portfolio-shadow-glass)',
-				'accent': 'var(--portfolio-shadow-accent)',
-				'elevation': 'var(--portfolio-shadow-elevation)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -105,11 +88,15 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'typing': 'typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite',
-				'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-				'float': 'float 3s ease-in-out infinite',
-				'glow': 'glow 2s ease-in-out infinite',
+				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				serifBrand: ['Georgia', 'Times New Roman', 'serif']
+			},
+			fontSize: {
+				body: ['18px', { lineHeight: '26px' }],
+				h1: ['38px', { lineHeight: '42px' }],
+				h2: ['24px', { lineHeight: '26px' }]
 			}
 		}
 	},
